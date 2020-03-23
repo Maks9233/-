@@ -57,7 +57,7 @@ header img {
 }
 
 header img:hover {
-  transform: scale(2.5) ;
+  transform: scale(1.4) rotate(5deg);
 }
 
 .tag {
