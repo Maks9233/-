@@ -64,7 +64,7 @@ header img:hover {
   display: table;
   padding: 10px;
   margin: 10px auto;
-  background-color: #fff;
+  background-color: #1be04c;
   border-radius: 10px;
 }
 
@@ -108,3 +108,8 @@ footer {
   text-align: center;
   padding: 60px;
 }
+
+ h1 {
+   letter-spacing: 5px;
+   word-spacing: 5px;
+ }
