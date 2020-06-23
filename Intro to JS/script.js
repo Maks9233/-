@@ -1,6 +1,7 @@
 var playerName;
-playerName = "Altair \" is an assasin";
+playerName = "Я з Надвірної";
 var player = 123;
+let age = prompt('Де ти живеш?');
 
-
+alert(`О ${age} Круто`); 
 alert(playerName);
