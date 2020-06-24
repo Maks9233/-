@@ -17,13 +17,14 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(375, 400, 'coin');
   createItem(400, 375, 'coin');
-
+  createItem(100, 375, 'star'); 
 }
 
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
   platforms.create(450, 550, 'platform');
+  platforms.create(250, 350, 'platform');
   platforms.setAll('body.immovable', true);
 }
 
