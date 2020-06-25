@@ -19,7 +19,6 @@ function addItems() {
   createItem(575, 500, 'coin');
   createItem(225, 500, 'coin');
   createItem(100, 250, 'coin');
-  createItem(575, 150, 'coin');
   createItem(525, 300, 'star');
   createItem(225, 200, 'coin');
   createItem(375, 100, 'poison');
@@ -36,11 +35,9 @@ function addPlatforms() {
   platforms.create(300, 450, 'platform');
   platforms.create(250, 150, 'platform');
   platforms.create(50, 300, 'platform');
-  platforms.create(150, 250, 'platform');
   platforms.create(550, 200, 'platform2');
   platforms.create(300, 450, 'platform2');
   platforms.create(400, 350, 'platform2');
-  platforms.create(100, 100, 'platform2');
   platforms.setAll('body.immovable', true);
 }
 
@@ -64,8 +61,10 @@ function itemHandler(player, item) {
   item.kill();
   if (item.key === 'coin') {
      currentScore = currentScore + 10;
-  } else if (item.key === 'poison') {
-     currentScore = currentScore - 25;
+  }
+  if (item.key === 'poison') {
+     platforms.create (100, 200, 'platform2');
+     
   } else if (item.key === 'star') {
      currentScore = currentScore + 25;
   }
